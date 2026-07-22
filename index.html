@@ -181,6 +181,17 @@
     .card{transition:transform .18s ease, box-shadow .18s ease;}
     .card:hover{transform:translateY(-2px);box-shadow:0 8px 22px rgba(11,33,64,.10);}
   }
+
+/* ============ SBA CERTIFICATION BADGES ============ */
+.certs{display:flex;align-items:flex-start;gap:20px;flex-wrap:wrap;margin-top:22px;
+  padding-top:20px;border-top:1px solid var(--line);}
+.certs img{display:block;width:140px;height:auto;flex:none;}
+.certs-txt{flex:1 1 260px;min-width:240px;}
+.certs-txt strong{display:block;font-family:"Cambria",serif;font-size:16px;color:var(--navy);
+  margin-bottom:6px;}
+.certs-txt p{margin:0 0 8px;font-size:14px;line-height:1.55;color:var(--slate);}
+.certs-txt b{color:var(--ink);font-weight:600;}
+@media (max-width:560px){.certs img{width:112px;}}
 </style>
 </head>
 <body>
@@ -333,6 +344,21 @@
         </table>
         <p class="codes-note">Complete NAICS and PSC profile available on our SAM.gov entity record —
           UEI <span class="mono">VR37USB2UCS5</span>, CAGE <span class="mono">9WRC5</span>.</p>
+
+        <div class="certs">
+          <img src="sba-sdvosb-certified.png" width="140" height="175" loading="lazy"
+               alt="U.S. Small Business Administration — Service-Disabled Veteran-Owned Certified">
+          <img src="sba-vosb-certified.png" width="140" height="175" loading="lazy"
+               alt="U.S. Small Business Administration — Veteran-Owned Certified">
+          <div class="certs-txt">
+            <strong>Certified, not self-certified.</strong>
+            <p>Lot 9 LLC is listed in the SBA certification database (VetCert) as a
+              <b>Service-Disabled Veteran-Owned Small Business</b> and a <b>Veteran-Owned Small
+              Business</b> &mdash; certified since July 2024 and current through January 2029.</p>
+            <p>Our SAM.gov entity registration is <b>active</b>, valid through July 2027, so we are
+              eligible for award today.</p>
+          </div>
+        </div>
       </div>
     </div>
   </div>
