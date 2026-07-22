@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="46" height="46" viewBox="0 0 46 46" role="img" aria-label="Lot 9 LLC">
+  <rect x="1.5" y="1.5" width="43" height="43" stroke="#C9A227" stroke-width="2.6" fill="none"/>
+  <line x1="15.6" y1="1.5" x2="15.6" y2="44.5" stroke="#C9A227" stroke-width="1" opacity=".5"/>
+  <line x1="30.4" y1="1.5" x2="30.4" y2="44.5" stroke="#C9A227" stroke-width="1" opacity=".5"/>
+  <line x1="1.5" y1="15.6" x2="44.5" y2="15.6" stroke="#C9A227" stroke-width="1" opacity=".5"/>
+  <line x1="1.5" y1="30.4" x2="44.5" y2="30.4" stroke="#C9A227" stroke-width="1" opacity=".5"/>
+  <rect x="30.4" y="30.4" width="14.1" height="14.1" fill="#C9A227"/>
+</svg>
