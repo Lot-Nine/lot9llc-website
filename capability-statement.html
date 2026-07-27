@@ -44,7 +44,10 @@
   .wordmark .nine{font-family:"Cambria",Georgia,serif;font-weight:700;font-size:23pt;
     color:var(--gold);letter-spacing:.05em;display:block;}
   .mast-div{width:1px;align-self:stretch;background:rgba(255,255,255,.18);margin:0 2px;}
-  .mast-text{flex:1;min-width:0;}
+  /* min-width guards against flex collapse: adding the SBA badge to this row squeezed
+     .mast-text to 0px, which wrapped the tagline into 242px and blew the masthead to 371px
+     (and the PDF to 2 pages). Measured 2026-07-26 -- do not remove this floor. */
+  .mast-text{flex:1;min-width:2.6in;}
   .legal{font-size:12.6pt;font-weight:700;color:#fff;margin:0 0 3px 0;letter-spacing:.02em;}
   .tagline{font-size:9.6pt;color:#B9C7E0;margin:0;line-height:1.35;text-wrap:balance;}
   .chips{flex:0 0 auto;display:flex;flex-direction:column;gap:5px;align-items:flex-end;}
@@ -53,6 +56,14 @@
     text-transform:uppercase;padding:4px 8px;white-space:nowrap;}
   .chip .dot{width:4px;height:4px;background:var(--gold);border-radius:50%;}
   .chip.solid{background:var(--gold);color:var(--navy-deep);border-color:var(--gold);}
+  /* SBA VetCert badge. Cleared for this use: SBA's terms permit the icon on "business websites,
+     business cards, and social media profiles, as well as on CAPABILITY STATEMENTS and proposal
+     bids." PROHIBITED on company letterhead, marketing materials, and advertising -- which is why
+     it is deliberately absent from the Outlook signature. */
+  .sba-badge{display:block;height:.56in;width:auto;}
+  .sba-plate{flex:0 0 auto;align-self:center;background:#fff;border-radius:3px;
+    padding:4px 5px;border:1px solid rgba(201,162,39,.55);
+    box-shadow:0 1px 3px rgba(0,0,0,.28);line-height:0;}
   .goldrule{height:2.5px;background:linear-gradient(90deg,var(--gold) 0%,var(--gold) 62%,var(--navy) 62%,var(--navy) 100%);}
 
   /* ================= GRID ================= */
@@ -179,6 +190,8 @@
         <span class="chip solid"><span class="dot" style="background:#0B2140;"></span>SDVOSB &middot; VOSB</span>
         <span class="chip">Small Business</span>
       </div>
+      <span class="sba-plate"><img class="sba-badge" src="sba-sdvosb-certified.png"
+           alt="U.S. Small Business Administration Certified Service-Disabled Veteran-Owned Small Business"></span>
     </div>
     <div class="goldrule"></div>
 
