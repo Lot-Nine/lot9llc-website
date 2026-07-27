@@ -1,0 +1,449 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Federal IT Brief — July 28, 2026 | The Brief, Lot 9 LLC</title>
+<meta name="description" content="A record Patch Tuesday, an on-premises SharePoint exploitation wave that patching alone will not fix, CMMC Phase 2 suspended, and the lifecycle and licensing dates now driving federal procurement.">
+<link rel="canonical" href="https://lot9llc.com/brief/2026-07-28-federal-it-brief.html">
+
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="Lot 9 LLC">
+<meta property="og:title" content="Federal IT Brief — July 28, 2026">
+<meta property="og:description" content="A record Patch Tuesday, a SharePoint exploitation wave patching alone will not fix, CMMC Phase 2 suspended, and the lifecycle dates now driving procurement.">
+<meta property="og:url" content="https://lot9llc.com/brief/2026-07-28-federal-it-brief.html">
+<meta property="article:published_time" content="2026-07-28T09:00:00-06:00">
+<meta property="og:image" content="https://lot9llc.com/assets/og-image.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Lot 9 LLC - SDVOSB and VOSB federal supply partner. IT hardware and software, OEM maintenance renewals, medical equipment, communications. UEI VR37USB2UCS5, CAGE 9WRC5.">
+<meta name="twitter:card" content="summary_large_image">
+
+<link rel="icon" href="../assets/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;550;600;650;700&family=Source+Serif+4:opsz,wght@8..60,500;8..60,600&family=IBM+Plex+Mono:wght@400;500;600&display=swap">
+<link rel="stylesheet" href="../assets/site.css">
+
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@type":"BlogPosting",
+  "headline":"Federal IT Brief — July 28, 2026",
+  "datePublished":"2026-07-28T09:00:00-06:00",
+  "author":{"@type":"Organization","name":"Lot 9 LLC"},
+  "publisher":{"@type":"Organization","name":"Lot 9 LLC","url":"https://lot9llc.com"},
+  "mainEntityOfPage":"https://lot9llc.com/brief/2026-07-28-federal-it-brief.html",
+  "description":"A record Patch Tuesday, an on-premises SharePoint exploitation wave that patching alone will not fix, CMMC Phase 2 suspended, and the lifecycle and licensing dates now driving federal procurement."
+}
+</script>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+
+<header class="site-head">
+  <div class="wrap">
+    <a class="brand" href="../index.html" aria-label="Lot 9 LLC — home">
+      <svg width="32" height="32" viewBox="0 0 46 46" aria-hidden="true">
+        <rect x="1.6" y="1.6" width="42.8" height="42.8" rx="1.5" stroke="#C9A227" stroke-width="2.4" fill="none"/>
+        <line x1="15.6" y1="2" x2="15.6" y2="44" stroke="#C9A227" stroke-width=".9" opacity=".45"/>
+        <line x1="30.4" y1="2" x2="30.4" y2="44" stroke="#C9A227" stroke-width=".9" opacity=".45"/>
+        <line x1="2" y1="15.6" x2="44" y2="15.6" stroke="#C9A227" stroke-width=".9" opacity=".45"/>
+        <line x1="2" y1="30.4" x2="44" y2="30.4" stroke="#C9A227" stroke-width=".9" opacity=".45"/>
+        <rect x="30.4" y="30.4" width="14" height="14" fill="#C9A227"/>
+      </svg>
+      <span>
+        <span class="brand-name">LOT 9 LLC</span>
+        <span class="brand-sub">Federal Supply</span>
+      </span>
+    </a>
+    <button class="nav-btn" id="navBtn" aria-expanded="false" aria-controls="nav" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+    <nav class="nav" id="nav" aria-label="Primary">
+      <a href="../index.html">Home</a>
+      <a href="../capabilities.html">Capabilities</a>
+      <a href="index.html" aria-current="page">The Brief</a>
+      <a href="../contact.html">Contact</a>
+      <a class="btn btn-primary" href="../capability-statement.html">Capability Statement</a>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+
+<section>
+  <div class="wrap">
+
+    <div class="article-head">
+      <p class="crumb"><a href="../index.html">Home</a> &nbsp;/&nbsp;
+        <a href="index.html">The Brief</a> &nbsp;/&nbsp; July 28, 2026</p>
+      <h1>Federal IT Brief &mdash; July 28, 2026</h1>
+      <p class="post-meta">
+        <span class="tag">Weekly Brief</span>
+        <time datetime="2026-07-28">July 28, 2026</time>
+        <span>&middot;</span>
+        <span>9 min read</span>
+      </p>
+      <p class="lede" style="margin-bottom:0;">The largest Microsoft patch cycle on record landed on
+        the same day two of its own products stopped being supported. An on-premises SharePoint
+        exploitation wave is running that patching alone will not close. And the Pentagon just pulled
+        the November CMMC deadline off the calendar.</p>
+    </div>
+
+    <div class="article">
+
+      <div class="callout">
+        <span class="lbl">The short version</span>
+        <p><strong>Patch, then hunt.</strong> The SharePoint campaign steals cryptographic keys that
+          survive the patch &mdash; applying the update and moving on leaves the intruder inside.</p>
+        <p><strong>Check your edge appliances.</strong> SonicWall, Check Point, Fortinet, and Oracle
+          E-Business Suite all picked up actively-exploited entries on CISA&rsquo;s Known Exploited
+          Vulnerabilities catalog this month, several with three-day federal remediation clocks.</p>
+        <p style="margin-bottom:0;"><strong>Two deadlines moved, several did not.</strong> CMMC Phase 2
+          is suspended. SharePoint Server 2016/2019 end-of-support, the October Windows dates, and the
+          July Microsoft 365 price change all still stand.</p>
+      </div>
+
+      <h2>1. The SharePoint wave &mdash; and why patching is only half the job</h2>
+
+      <p>CISA issued an alert on <strong>July 14</strong> (last revised July 16) confirming active
+        exploitation of four vulnerabilities in on-premises SharePoint Server &mdash;
+        <code>CVE-2026-32201</code>, <code>CVE-2026-45659</code>, <code>CVE-2026-56164</code>, and
+        <code>CVE-2026-58644</code>. Every supported on-premises version is affected: Subscription
+        Edition, 2019, and 2016.</p>
+
+      <p>The detail that matters operationally is what happens <em>after</em> the initial compromise.
+        Attackers are using the access to steal IIS machine keys. Those keys let an adversary forge
+        their own authentication tokens &mdash; which means <strong>the access survives the
+        patch</strong>. CISA's guidance is explicit and slightly counter-intuitive: hunt for
+        machine-key harvesting activity <em>before</em> rotating keys, so you understand what was
+        taken rather than destroying the evidence.</p>
+
+      <p>A fifth flaw, <code>CVE-2026-50522</code>, was added to the KEV catalog on <strong>July
+        22</strong>. A public proof-of-concept appeared on July 20; watchTowr's honeypots recorded
+        successful real-world compromises within hours of it going public. Same objective &mdash;
+        machine keys, forged tokens, persistence.</p>
+
+      <div class="callout">
+        <span class="lbl">Procurement angle</span>
+        <p style="margin-bottom:0;">This is an incident-response event, not a patch cycle. If an
+          exposed farm was reachable from the internet, credential rotation and a compromise
+          assessment belong in the same work order as the update.</p>
+      </div>
+
+      <h2>2. The end-of-support collision</h2>
+
+      <p>SharePoint Server 2016 and 2019 reached <strong>end of extended support on July 14,
+        2026</strong> &mdash; the same day Patch Tuesday shipped a fix for a zero-day being actively
+        exploited in those very products. They received an actively-exploited zero-day fix as part of
+        their <em>final</em> security update. Project Server 2016/2019, SQL Server 2016, and InfoPath
+        2013 went end-of-support on the same date.</p>
+
+      <p>There is <strong>no Extended Security Update program for SharePoint Server</strong>. An
+        agency still running 2016 or 2019 is now operating an internet-adjacent application with no
+        future patches, in the middle of an active exploitation campaign against it. The realistic
+        paths are SharePoint Server Subscription Edition licensing or migration to SharePoint Online,
+        and both are procurement actions with lead time.</p>
+
+      <h2>3. A record patch cycle &mdash; and what the numbers actually say</h2>
+
+      <p>Microsoft's <strong>July 14</strong> Patch Tuesday was the largest on record, and you will
+        see different totals depending on who counted. Malwarebytes and Security Boulevard report
+        <strong>622 Microsoft CVEs</strong>; Tenable counts <strong>569</strong> and BleepingComputer
+        <strong>570</strong>. The gap is methodology, not error &mdash; trackers differ on whether to
+        include relayed upstream fixes and product entries patched earlier in the month. Roughly
+        <strong>59 were rated Critical</strong>.</p>
+
+      <p>Three zero-days were addressed. <strong>Two were under active exploitation:</strong></p>
+      <ul>
+        <li><code>CVE-2026-56155</code> &mdash; elevation of privilege in <strong>Active Directory
+          Federation Services</strong>, reportedly found during incident response.</li>
+        <li><code>CVE-2026-56164</code> &mdash; elevation of privilege in <strong>SharePoint
+          Server</strong> (the flaw at the center of item 1).</li>
+      </ul>
+      <p>The third, <code>CVE-2026-50661</code>, is a <strong>BitLocker security-feature bypass</strong>
+        that was publicly disclosed but not reported as exploited. It requires physical access to read
+        encrypted data &mdash; which puts it squarely in the lost-or-seized government laptop scenario.</p>
+
+      <p>An ADFS elevation-of-privilege bug is an identity-infrastructure problem, not an application
+        one. For agencies still federating through ADFS, that is the item to schedule first.</p>
+
+      <h2>4. WSUS stumbled during the biggest patch cycle of the year</h2>
+
+      <p>Microsoft confirmed a <strong>Windows Server Update Services degradation</strong> &mdash;
+        long synchronization times and sync timeouts &mdash; with impact rising from <strong>July
+        13</strong>, one day before Patch Tuesday. The cause was a buildup of published test
+        detectoid metadata.</p>
+
+      <p>The important wrinkle: the service-side mitigation deployed July 18 <strong>only fixes newly
+        installed or rebuilt WSUS servers</strong>. Existing installations require manual SUSDB
+        cleanup per KB5121986. Microsoft marked the issue resolved on July 20, but an untouched
+        existing server is not automatically healthy.</p>
+
+      <p>Separately, Microsoft <strong>withheld the July security update from some Dell devices</strong>
+        after an incompatibility between an Intel driver and a new Windows USB-C Connection Manager
+        interface, resolving it with an out-of-band update on July 18. Dell is a dominant federal
+        endpoint OEM &mdash; those fleets sat through a cycle containing two exploited zero-days. Worth
+        confirming they have since received it.</p>
+
+      <h2>5. CMMC Phase 2 suspended</h2>
+
+      <p>On <strong>July 13</strong> the Pentagon announced the immediate suspension of Phase 2 of
+        the Cybersecurity Maturity Model Certification program &mdash; the phase that would have
+        required <strong>third-party (C3PAO) assessments</strong> on contracts involving sensitive but
+        unclassified information starting <strong>November 10, 2026</strong>. Later phase milestones
+        are frozen as well, and a CMMC Reform Task Force is running a 60-day review with a public
+        request for information.</p>
+
+      <p>The stated reasoning is capacity and cost. SBA data cited by the department suggests later
+        CMMC phases could cost small and midsize businesses <strong>more than $7 billion
+        annually</strong>, against an assessor shortage of roughly <strong>100 authorized C3PAOs for
+        more than 100,000 companies</strong> needing assessment.</p>
+
+      <div class="callout">
+        <span class="lbl">Read this part carefully</span>
+        <p style="margin-bottom:0;">Suspension of the <em>assessment requirement</em> is not
+          suspension of the <em>security requirement</em>. Phase 1 self-assessment obligations remain
+          in force, and the underlying duty to protect covered defense information under
+          <strong>NIST SP 800-171</strong> is unchanged &mdash; the department says it will enforce
+          through self-assessments and selected government-led assessments. A false self-attestation
+          carries the same False Claims Act exposure it did in June.</p>
+      </div>
+
+      <h2>6. The edge-appliance drumbeat</h2>
+
+      <p>Four separate perimeter or business-critical products picked up actively-exploited KEV
+        entries in two weeks. The pattern is consistent: unauthenticated, network-reachable, and
+        aimed at devices that sit in front of everything else.</p>
+
+      <ul>
+        <li><strong>SonicWall SMA1000</strong> &mdash; a zero-day pair found by Rapid7 being exploited
+          together. <code>CVE-2026-15409</code> is a server-side request forgery rated
+          <strong>CVSS 10.0</strong>; <code>CVE-2026-15410</code> chains from it to root. Affects
+          models 6210, 7210, and 8200v. Fixed in 12.4.3-03453 and 12.5.0-02835 or later.
+          Added to KEV July 14.</li>
+        <li><strong>Check Point SmartConsole</strong> &mdash; <code>CVE-2026-16232</code>, an
+          authentication bypass rated <strong>CVSS 9.1</strong>, exploited as a zero-day. An
+          unauthenticated attacker can reach the management server with full administrative rights and
+          rewrite policy across every managed gateway. KEV July 22, three-day federal deadline.</li>
+        <li><strong>Fortinet FortiSandbox</strong> &mdash; <code>CVE-2026-25089</code> and
+          <code>CVE-2026-39808</code>, both <strong>CVSS 9.1</strong> OS command injection, no
+          credentials or user interaction required. KEV July 16. A malware-detonation appliance is
+          designed to ingest untrusted files; compromising it blinds detection from the inside.</li>
+        <li><strong>Oracle E-Business Suite</strong> &mdash; <code>CVE-2026-46817</code>,
+          <strong>CVSS 9.8</strong>, added to KEV July 15 with a federal remediation deadline of
+          <strong>July 18</strong>. Three days, on a core financial system. Shadowserver documented
+          over 1,000 internet-exposed EBS instances, more than half in the United States.</li>
+      </ul>
+
+      <p>Oracle's July Critical Patch Update was itself the largest in company history &mdash;
+        <strong>1,449 patches across 32 product families</strong>, including <strong>ten CVSS
+        10.0</strong> vulnerabilities in Fusion Middleware described as exploitable by unauthenticated
+        attackers over HTTP.</p>
+
+      <h2>7. Nation-state activity worth the read</h2>
+
+      <p><strong>Zimbra, and no click required.</strong> On July 23, CISA and 25 partner agencies
+        &mdash; including NSA, FBI, DCSA, DC3, and NCIS &mdash; published advisory
+        <strong>AA26-204A</strong> on a Russian state-supported actor tracked as LAUNDRY BEAR,
+        compromising Western government and commercial organizations running Zimbra Collaboration
+        Suite since at least July 2025. It exploits <code>CVE-2025-66376</code>, patched in November
+        2025.</p>
+
+      <p>The mechanism is the part to internalize: <strong>merely viewing a malicious email</strong>
+        in a vulnerable webmail version triggers exfiltration of the previous 90 days of mail, the
+        Global Address List, the password, 2FA tokens, and a newly created application passcode. No
+        link click, no attachment. <strong>Security awareness training offers zero protection against
+        this one</strong> &mdash; patching is the only control. The DCSA/DC3/NCIS co-seals point at
+        defense-industrial-base targeting.</p>
+
+      <p><strong>Routers, and it is not even a CVE.</strong> Advisory <strong>AA26-194A</strong>
+        (July 13) documents Russian FSB Center 16 actors compromising network devices worldwide. The
+        primary technique is scanning for SNMP agents that still accept <strong>default or common
+        community strings</strong>, then reconfiguring the device. CISA separately added
+        <code>CVE-2008-4128</code> &mdash; a 2008 Cisco IOS flaw affecting end-of-life gear &mdash; to
+        the KEV catalog the same day. CISA notes substantial overlap with Salt Typhoon activity.</p>
+
+      <p>That last one is genuinely a procurement problem rather than a patching one. Default SNMP
+        strings and end-of-life network hardware are fixed with a refresh and a configuration
+        standard.</p>
+
+      <h2>8. The lifecycle and licensing calendar</h2>
+
+      <p>Four dates that will show up in somebody's budget:</p>
+
+      <ul>
+        <li><strong>October 13, 2026</strong> &mdash; Windows 11 version <strong>24H2 Home and
+          Pro</strong> and <strong>Windows 10 Enterprise LTSB 2016</strong> stop receiving updates.
+          24H2 Enterprise and Education continue to October 12, 2027. LTSB 2016 in particular tends to
+          live on fixed-function and OT-adjacent systems that often cannot take Windows 11 at all
+          &mdash; that is a hardware replacement line item, not an in-place upgrade.</li>
+        <li><strong>July 1, 2026</strong> &mdash; Microsoft 365 price increases took effect, with
+          existing customers holding current pricing until renewal. Government pricing is being
+          adjusted in line with commercial, and increases <strong>above 10% are phased over multiple
+          years</strong> per federal regulation. Microsoft's cited government examples: Microsoft 365
+          G3 GCC up 8%, Office 365 G3 GCC up 13%. Standalone Teams and Copilot SKUs are excluded.</li>
+        <li><strong>July 4, 2026</strong> &mdash; FedRAMP's 2026 Consolidated Rules took effect for
+          optional early adoption, with mandatory compliance January 1, 2027 and legacy Rev5 available
+          until June 11, 2027. The framework replaces low/moderate/high impact levels with
+          certification classes A through D and drops the agency-sponsorship requirement. Practical
+          consequence: <strong>"FedRAMP Authorized" language in existing solicitations and capability
+          statements is going stale.</strong></li>
+        <li><strong>Enterprise consolidation continues.</strong> The Defense Department awarded Oracle
+          a roughly <strong>$7 billion</strong> agreement consolidating on-premises Oracle licensing
+          across the department, the Coast Guard, and the intelligence community &mdash; five years
+          with a five-year option, negotiated by the Navy, with projected savings of at least $441
+          million. It follows a comparable <strong>$9.69 billion</strong> Microsoft agreement in May.</li>
+      </ul>
+
+      <h2>What we would do this week</h2>
+      <ol>
+        <li><strong>Inventory on-premises SharePoint.</strong> If any farm was internet-reachable,
+          treat it as a compromise assessment, not a patch. Rotate machine keys &mdash; after you have
+          hunted, per CISA's sequencing.</li>
+        <li><strong>Walk the KEV list against your edge inventory.</strong> SonicWall SMA1000, Check
+          Point management servers, FortiSandbox, Oracle EBS. The federal deadlines on several of
+          these have already passed.</li>
+        <li><strong>Confirm WSUS actually recovered.</strong> An existing server needs the manual
+          SUSDB cleanup; the July 18 service-side fix did not reach it.</li>
+        <li><strong>Patch Zimbra if you run it</strong>, and stop treating the risk as user-behavior
+          dependent.</li>
+        <li><strong>Pull the October 13 list.</strong> Identify Windows 10 LTSB 2016 and 24H2 Home/Pro
+          devices now &mdash; the ones that cannot take Windows 11 need hardware, and hardware needs
+          lead time.</li>
+        <li><strong>Re-check your CMMC assumptions</strong> if you had budgeted a C3PAO assessment for
+          this fiscal year, but do not let self-assessment discipline slip.</li>
+      </ol>
+
+      <div class="callout">
+        <span class="lbl">Where Lot 9 fits</span>
+        <p style="margin-bottom:0;">Several items above are refresh and renewal actions &mdash; end-of-support
+          endpoints, appliance replacement, license and maintenance renewals. That is the lane we
+          supply: IT hardware and software, OEM maintenance renewals, and communications equipment,
+          sourced through authorized channels as an SBA-certified SDVOSB.
+          <a href="../contact.html">Send a solicitation number</a> and we will come back with a quote
+          and sourcing confirmation.</p>
+      </div>
+
+      <div class="sources">
+        <h2>Sources</h2>
+        <ol>
+          <li>CISA — <a href="https://www.cisa.gov/news-events/alerts/2026/07/14/cisa-urges-sharepoint-hardening-after-new-exploitations">CISA Urges SharePoint Hardening After New Exploitations</a> (July 14, 2026; revised July 16)</li>
+          <li>CISA — <a href="https://www.cisa.gov/news-events/alerts/2026/07/22/cisa-adds-two-known-exploited-vulnerabilities-catalog">CISA Adds Two Known Exploited Vulnerabilities to Catalog</a> (July 22, 2026)</li>
+          <li>CISA — <a href="https://www.cisa.gov/news-events/alerts/2026/07/14/cisa-adds-four-known-exploited-vulnerabilities-catalog">CISA Adds Four Known Exploited Vulnerabilities to Catalog</a> (July 14, 2026)</li>
+          <li>CISA — <a href="https://www.cisa.gov/news-events/alerts/2026/07/16/cisa-adds-three-known-exploited-vulnerabilities-catalog">CISA Adds Three Known Exploited Vulnerabilities to Catalog</a> (July 16, 2026)</li>
+          <li>CISA — <a href="https://www.cisa.gov/news-events/cybersecurity-advisories/aa26-204a">AA26-204A: Russian State-Supported Actors Exploiting Zimbra Collaboration Suite</a> (July 23, 2026)</li>
+          <li>CISA — <a href="https://www.cisa.gov/news-events/cybersecurity-advisories/aa26-194a">AA26-194A: FSB Center 16 Targeting Networking Devices</a> (July 13, 2026)</li>
+          <li>BleepingComputer — <a href="https://www.bleepingcomputer.com/news/microsoft/microsoft-july-2026-patch-tuesday-fixes-massive-570-flaws-3-zero-days/">Microsoft July 2026 Patch Tuesday fixes massive 570 flaws, 3 zero-days</a> (July 14, 2026)</li>
+          <li>Malwarebytes — <a href="https://www.malwarebytes.com/blog/bugs/2026/07/july-2026-patch-tuesday-fixes-622-microsoft-cves-including-three-zero-days">July 2026 Patch Tuesday fixes 622 Microsoft CVEs, including three zero-days</a> (July 2026)</li>
+          <li>BleepingComputer — <a href="https://www.bleepingcomputer.com/news/security/critical-sharepoint-rce-flaw-exploited-to-steal-machine-keys/">Critical SharePoint RCE flaw exploited to steal machine keys</a> (July 21, 2026)</li>
+          <li>BleepingComputer — <a href="https://www.bleepingcomputer.com/news/security/cisa-orders-feds-to-patch-actively-exploited-oracle-flaw-by-saturday/">CISA orders feds to patch actively exploited Oracle flaw by Saturday</a> (July 16, 2026)</li>
+          <li>Rapid7 — <a href="https://www.rapid7.com/blog/post/etr-rapid7-mdr-team-discovers-new-sonicwall-sma1000-zero-days-being-actively-exploited-cve-2026-15409-cve-2026-15410/">Rapid7 MDR discovers SonicWall SMA1000 zero-days being actively exploited</a> (July 15, 2026)</li>
+          <li>Rapid7 — <a href="https://www.rapid7.com/blog/post/etr-cve-2026-16232-critical-check-point-smartconsole-authentication-bypass-exploited-in-the-wild/">CVE-2026-16232: Check Point SmartConsole authentication bypass exploited in the wild</a> (July 2026)</li>
+          <li>The Register — <a href="https://www.theregister.com/security/2026/07/17/attackers-target-critical-fortisandbox-flaws-as-cisa-issues-patch-order/5274287">Attackers target critical FortiSandbox flaws as CISA issues patch order</a> (July 17, 2026)</li>
+          <li>Federal News Network — <a href="https://federalnewsnetwork.com/cybersecurity/2026/07/pentagon-suspends-cmmc-phase-two-requirements-launches-review-of-program/">Pentagon suspends CMMC phase two requirements, launches review of program</a> (July 13, 2026)</li>
+          <li>Breaking Defense — <a href="https://breakingdefense.com/2026/07/pentagon-announces-immediate-suspension-of-cmmc-mandates/">Pentagon announces &lsquo;immediate suspension&rsquo; of CMMC Phase II mandates</a> (July 13, 2026)</li>
+          <li>WilmerHale — <a href="https://www.wilmerhale.com/en/insights/client-alerts/20260720-pentagon-suspends-cmmc-phase-2-requirements-and-launches-review-of-cybersecurity-certification-program">Pentagon Suspends CMMC Phase 2 Requirements and Launches Review</a> (July 20, 2026)</li>
+          <li>Microsoft Learn — <a href="https://learn.microsoft.com/en-us/windows/release-health/status-windows-11-25h2">Windows release health: Windows 11 25H2 known issues</a> (WSUS degradation; Dell update block)</li>
+          <li>Microsoft — <a href="https://support.microsoft.com/en-us/servicing/os/windows/docs/2026/07/kb5121986-windows-server-update-service-sync-operations-issues-and-timeouts">KB5121986: WSUS sync operations issues and timeouts</a> (July 20, 2026)</li>
+          <li>BleepingComputer — <a href="https://www.bleepingcomputer.com/news/microsoft/windows-11-24h2-home-and-pro-reach-end-of-support-in-90-days/">Windows 11 24H2 Home and Pro reach end of support in 90 days</a> (July 16, 2026)</li>
+          <li>Computerworld — <a href="https://www.computerworld.com/article/4198400/julys-patch-tuesday-sees-an-end-of-support-collision-amidst-a-massive-record-setting-patch-wave.html">July&rsquo;s Patch Tuesday sees an end-of-support collision amidst a record-setting patch wave</a> (July 17, 2026)</li>
+          <li>Microsoft — <a href="https://www.microsoft.com/en-us/licensing/news/2026-m365-packaging-pricing-updates">Microsoft 365 packaging and pricing updates</a> (effective July 1, 2026)</li>
+          <li>InfoWorld — <a href="https://www.infoworld.com/article/4200189/oracles-july-update-fixes-ten-10-0-vulnerabilities-in-fusion-middleware-2.html">Oracle&rsquo;s July update fixes ten 10.0 vulnerabilities in Fusion Middleware</a> (July 22, 2026)</li>
+          <li>FedScoop — <a href="https://fedscoop.com/fedramp-20x-widely-available-to-cloud-services-with-release-of-2026-consolidated-rules/">FedRAMP 20x widely available with release of 2026 Consolidated Rules</a> (June 29, 2026)</li>
+          <li>Orca Security — <a href="https://orca.security/resources/blog/microsoft-july-2026-patch-tuesday-sharepoint-zero-day/">Microsoft July 2026 Patch Tuesday: SharePoint zero-day</a> (July 15, 2026)</li>
+        </ol>
+      </div>
+
+      <p class="small" style="margin-top:var(--s7);border-top:1px solid var(--line);padding-top:var(--s5);">
+        <strong>About this brief.</strong> Published by Lot 9 LLC, a Service-Disabled Veteran-Owned
+        Small Business supplying IT, communications, and medical equipment to federal agencies. We
+        summarize published reporting and add procurement context &mdash; we do not conduct original
+        security research. Every item links to its source; verify against the primary advisory before
+        acting. Vulnerability details and remediation deadlines change quickly, and figures cited by
+        different trackers can legitimately differ.</p>
+
+    </div>
+  </div>
+</section>
+
+<div class="cta-band">
+  <div class="wrap">
+    <div style="flex:1 1 420px;">
+      <h2>Refresh, renewal, or replacement in one of these lanes?</h2>
+      <p>Send the solicitation number and the requirement. You get a quote, sourcing confirmation, and
+        any manufacturer authorization documentation the solicitation calls for.</p>
+    </div>
+    <div class="btn-row">
+      <a class="btn btn-primary" href="../contact.html">Request a Quote</a>
+      <a class="btn btn-outline-light" href="index.html">More from The Brief</a>
+    </div>
+  </div>
+</div>
+
+</main>
+
+<footer class="site-foot">
+  <div class="wrap">
+    <div class="foot-grid">
+      <div>
+        <a class="brand" href="../index.html" aria-label="Lot 9 LLC — home">
+          <svg width="26" height="26" viewBox="0 0 46 46" aria-hidden="true">
+            <rect x="1.6" y="1.6" width="42.8" height="42.8" rx="1.5" stroke="#C9A227" stroke-width="2.8" fill="none"/>
+            <rect x="30.4" y="30.4" width="14" height="14" fill="#C9A227"/>
+          </svg>
+          <span class="brand-name">LOT 9 LLC</span>
+        </a>
+        <p class="foot-blurb">Service-Disabled Veteran-Owned Small Business supplying IT,
+          communications, and medical equipment to federal agencies.</p>
+      </div>
+      <div>
+        <h3>Site</h3>
+        <ul>
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="../capabilities.html">Capabilities</a></li>
+          <li><a href="index.html">The Brief</a></li>
+          <li><a href="../contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3>Documents</h3>
+        <ul>
+          <li><a href="../capability-statement.html">Capability Statement</a></li>
+          <li><a href="../Lot9-Capability-Statement.pdf">Download PDF</a></li>
+          <li><a href="feed.xml">RSS Feed</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3>Contact</h3>
+        <ul>
+          <li><a href="tel:+17192446236">719-244-6236</a></li>
+          <li><a href="mailto:Wilmy.Moise@lot9llc.com">Wilmy.Moise@lot9llc.com</a></li>
+          <li>Colorado Springs, CO</li>
+        </ul>
+      </div>
+    </div>
+    <div class="foot-ids">
+      <span>UEI <b>VR37USB2UCS5</b></span>
+      <span>CAGE <b>9WRC5</b></span>
+      <span>NAICS <b>541519</b></span>
+      <span>SDVOSB &middot; VOSB &middot; Small Business</span>
+    </div>
+    <p class="foot-legal">&copy; 2026 Lot 9 LLC &middot; Colorado Springs, Colorado &middot;
+      lot9llc.com</p>
+  </div>
+</footer>
+
+<script>
+(function(){
+  var b=document.getElementById('navBtn'), n=document.getElementById('nav');
+  if(!b||!n) return;
+  b.addEventListener('click',function(){
+    var open=n.classList.toggle('open');
+    b.setAttribute('aria-expanded',open?'true':'false');
+  });
+})();
+</script>
+</body>
+</html>

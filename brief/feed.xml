@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>The Brief — Lot 9 LLC</title>
+    <link>https://lot9llc.com/brief/</link>
+    <atom:link href="https://lot9llc.com/brief/feed.xml" rel="self" type="application/rss+xml"/>
+    <description>IT software, operating systems, and cybersecurity news — read through the lens of federal technology buying. Published by Lot 9 LLC, an SDVOSB federal supply partner in Colorado Springs.</description>
+    <language>en-us</language>
+    <copyright>Copyright 2026 Lot 9 LLC</copyright>
+    <managingEditor>Wilmy.Moise@lot9llc.com (Wilmy Moise)</managingEditor>
+    <webMaster>Wilmy.Moise@lot9llc.com (Wilmy Moise)</webMaster>
+    <lastBuildDate>Tue, 28 Jul 2026 09:00:00 -0600</lastBuildDate>
+
+    <item>
+      <title>Federal IT Brief — July 28, 2026</title>
+      <link>https://lot9llc.com/brief/2026-07-28-federal-it-brief.html</link>
+      <guid isPermaLink="true">https://lot9llc.com/brief/2026-07-28-federal-it-brief.html</guid>
+      <description>The first edition: the vulnerabilities federal teams are being told to patch on a clock, the operating-system and licensing changes moving procurement, and what each one means for a buyer with a budget and a deadline.</description>
+      <pubDate>Tue, 28 Jul 2026 09:00:00 -0600</pubDate>
+    </item>
+
+  </channel>
+</rss>

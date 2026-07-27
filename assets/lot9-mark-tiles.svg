@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" width="48" height="48" role="img" aria-label="Lot 9 LLC">
+  <title>Lot 9 LLC — Nine Tiles mark</title>
+  <!-- Option B: nine tiles, the ninth in gold. Kept for letterhead, business cards and
+       print use. Scales cleanly to 16px because it carries no hairlines.
+       Navy #12345E / Gold #C9A227. For dark grounds, swap the navy fill to #7FA3D8. -->
+  <g fill="#12345E">
+    <rect x="1"    y="1"    width="13" height="13" rx="1"/>
+    <rect x="17.5" y="1"    width="13" height="13" rx="1"/>
+    <rect x="34"   y="1"    width="13" height="13" rx="1"/>
+    <rect x="1"    y="17.5" width="13" height="13" rx="1"/>
+    <rect x="17.5" y="17.5" width="13" height="13" rx="1"/>
+    <rect x="34"   y="17.5" width="13" height="13" rx="1"/>
+    <rect x="1"    y="34"   width="13" height="13" rx="1"/>
+    <rect x="17.5" y="34"   width="13" height="13" rx="1"/>
+  </g>
+  <rect x="34" y="34" width="13" height="13" rx="1" fill="#C9A227"/>
+</svg>
