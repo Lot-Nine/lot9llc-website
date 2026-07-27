@@ -75,8 +75,8 @@
       <!-- ---------- FORM ---------- -->
       <div class="card" style="padding:var(--s6);">
         <h2 style="font-size:1.35rem;margin-bottom:var(--s2);">Send a message</h2>
-        <p class="small" style="margin-bottom:var(--s5);">Everything here goes straight to
-          Wilmy Moise. No intake queue.</p>
+        <p class="small" style="margin-bottom:var(--s5);">Everything here goes straight to the
+          owner. No intake queue.</p>
 
         <form id="contactForm" action="https://api.web3forms.com/submit" method="POST" novalidate>
           <input type="hidden" name="access_key" value="1fa9831e-e1ea-42e8-9e9c-db670f26545a">
@@ -111,23 +111,27 @@
         </form>
       </div>
 
-      <!-- ---------- DIRECT ---------- -->
+      <!-- ---------- WHAT HAPPENS NEXT ----------
+           ⚠️ NO phone number, NO email address, NO personal name anywhere on this site.
+           Will's standing rule: the form is the ONLY inbound channel, specifically to keep
+           the address and number off scrapers. Do not re-add `tel:` or `mailto:` links. -->
       <div>
         <div class="card" style="padding:var(--s6);margin-bottom:var(--s4);">
-          <h2 style="font-size:1.35rem;margin-bottom:var(--s4);">Direct lines</h2>
+          <h2 style="font-size:1.35rem;margin-bottom:var(--s4);">What happens next</h2>
           <table class="codes-t">
             <tbody>
               <tr>
-                <td class="c" style="width:74px;color:var(--muted);font-family:var(--sans);font-size:.66rem;letter-spacing:.13em;text-transform:uppercase;font-weight:700;">Phone</td>
-                <td><a href="tel:+17192446236">719-244-6236</a></td>
+                <td class="c" style="width:74px;color:var(--muted);font-family:var(--sans);font-size:.66rem;letter-spacing:.13em;text-transform:uppercase;font-weight:700;">Step 1</td>
+                <td>Your message goes straight to the owner &mdash; there is no intake queue.</td>
               </tr>
               <tr>
-                <td class="c" style="width:74px;color:var(--muted);font-family:var(--sans);font-size:.66rem;letter-spacing:.13em;text-transform:uppercase;font-weight:700;">Email</td>
-                <td><a href="mailto:Wilmy.Moise@lot9llc.com">Wilmy.Moise@lot9llc.com</a></td>
+                <td class="c" style="width:74px;color:var(--muted);font-family:var(--sans);font-size:.66rem;letter-spacing:.13em;text-transform:uppercase;font-weight:700;">Step 2</td>
+                <td>You get a reply by email, usually the same business day.</td>
               </tr>
               <tr>
-                <td class="c" style="width:74px;color:var(--muted);font-family:var(--sans);font-size:.66rem;letter-spacing:.13em;text-transform:uppercase;font-weight:700;">POC</td>
-                <td>Wilmy Moise, Owner</td>
+                <td class="c" style="width:74px;color:var(--muted);font-family:var(--sans);font-size:.66rem;letter-spacing:.13em;text-transform:uppercase;font-weight:700;">Step 3</td>
+                <td>If it&rsquo;s an active solicitation, we come back with a quote and sourcing
+                  confirmation.</td>
               </tr>
               <tr>
                 <td class="c" style="width:74px;color:var(--muted);font-family:var(--sans);font-size:.66rem;letter-spacing:.13em;text-transform:uppercase;font-weight:700;">Location</td>
@@ -189,9 +193,9 @@
       <div>
         <h3>Contact</h3>
         <ul>
-          <li><a href="tel:+17192446236">719-244-6236</a></li>
-          <li><a href="mailto:Wilmy.Moise@lot9llc.com">Wilmy.Moise@lot9llc.com</a></li>
+          <li>Use the form on this page</li>
           <li>Colorado Springs, CO</li>
+          <li class="mono" style="font-size:.78rem;">UEI VR37USB2UCS5</li>
         </ul>
       </div>
     </div>
@@ -232,12 +236,12 @@
           status.className='form-status ok';
           form.reset();
         } else {
-          status.textContent='Something went wrong. Please email Wilmy.Moise@lot9llc.com directly.';
+          status.textContent='Something went wrong sending that. Please try again in a moment.';
           status.className='form-status err';
         }
       })
       .catch(function(){
-        status.textContent='Something went wrong. Please email Wilmy.Moise@lot9llc.com directly.';
+        status.textContent='Something went wrong sending that. Please try again in a moment.';
         status.className='form-status err';
       })
       .then(function(){ btn.disabled=false; });
