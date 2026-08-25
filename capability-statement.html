@@ -317,16 +317,21 @@
         </svg>
         <span style="font-family:Cambria,serif;font-size:8.6pt;color:#fff;font-weight:700;letter-spacing:.14em;">LOT&nbsp;9&nbsp;LLC</span>
       </div>
-      <!-- Will's ruling 2026-07-28: full contact details BELONG on the capability statement.
-           Someone who opens the statement is a qualified reader; the website pages are what
-           casual scrapers hit. So: contact details HERE = yes, on any other page = never.
-           NOTE these are plain text, NOT `mailto:`/`tel:` links, deliberate, since linked
-           addresses are what automated harvesters collect most easily. Keep them plain. -->
-      <div class="foot-i"><b>POC</b>&nbsp; Wilmy Moise, Owner</div>
-      <div class="foot-i"><b>Phone</b>&nbsp; 719-244-6236</div>
-      <div class="foot-i"><b>Email</b>&nbsp; Wilmy.Moise@lot9llc.com</div>
+      <!-- 🔴 THIS IS THE PUBLIC VARIANT. NO PHONE, NO EMAIL, NO PERSONAL NAME, NO STREET
+           ADDRESS. EVER.
+           A prior comment here argued full contact details were fine because "someone who
+           opens the statement is a qualified reader." That reasoning was wrong and the
+           details were live on the public internet until 2026-08-24. This file is a plain
+           indexable page: it is linked from the header of EVERY page, listed in sitemap.xml
+           at priority 0.7, and robots.txt says `Allow: /`. It is not a gated download, so a
+           scraper reaches it exactly as easily as the home page. The address that was here
+           was also residential.
+           The full-POC variant for emailing a named buyer lives at
+           NIGHT-BUILD/direct-send/Capability-Statement-DIRECT.* and is NEVER deployed.
+           See the workspace CLAUDE.md: public = contact-via-form, UEI, CAGE, city only. -->
+      <div class="foot-i"><b>Contact</b>&nbsp; lot9llc.com/contact.html</div>
       <div class="foot-i"><b>Web</b>&nbsp; lot9llc.com</div>
-      <div class="foot-i"><b>Address</b>&nbsp; 985 Pico Point, Colorado Springs, CO 80905</div>
+      <div class="foot-i"><b>Location</b>&nbsp; Colorado Springs, CO</div>
     </div>
 
   </div>
