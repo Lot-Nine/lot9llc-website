@@ -597,7 +597,34 @@ details.sources a{overflow-wrap:anywhere;}
 }
 
 /* ---------------------------------------------------------------------------
-   16. PRINT
+   16. LEGAL PAGES (privacy, terms, accessibility)
+   Long-form prose. Narrower measure than the marketing pages because these are
+   read start to finish rather than scanned, and a dense legal page at the full
+   66ch shell is genuinely harder to follow.
+   ------------------------------------------------------------------------ */
+.legal{max-width:74ch;}
+.legal h2{
+  font-size:1.32rem;margin:var(--s7) 0 var(--s4);
+  padding-top:var(--s5);border-top:1px solid var(--line);
+}
+.legal h2:first-of-type{margin-top:0;padding-top:0;border-top:none;}
+.legal h3{font-size:1rem;margin:var(--s5) 0 var(--s3);color:var(--navy-700);}
+.legal p,.legal li{font-size:1rem;line-height:1.7;color:var(--ink-soft);}
+.legal p{max-width:none;}
+.legal ul{margin:0 0 var(--s4);padding-left:var(--s5);}
+.legal li{margin-bottom:var(--s2);}
+.legal li::marker{color:var(--accent);}
+.legal b,.legal strong{color:var(--fg);font-weight:650;}
+.legal a{color:var(--navy-600);text-decoration:underline;}
+.legal .callout{margin:var(--s5) 0;}
+.legal-meta{
+  font-family:var(--mono);font-size:.82rem;color:var(--muted);
+  padding-bottom:var(--s5);margin-bottom:var(--s6);
+  border-bottom:1px solid var(--line);
+}
+
+/* ---------------------------------------------------------------------------
+   17. PRINT
    ------------------------------------------------------------------------ */
 @media print{
   .site-head,.site-foot,.cta-band,.nav-btn{display:none!important;}
