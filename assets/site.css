@@ -1,32 +1,32 @@
 /* ============================================================================
-   LOT 9 LLC — lot9llc.com
+   LOT 9 LLC | lot9llc.com
    Shared stylesheet. ONE file for all pages (no build step on GitHub Pages,
    so this is the only place style duplication is actually solvable).
 
    Design intent: a precision instrument, not a brochure.
    Institutional serif headlines, neutral sans body, restrained gold.
-   Gold is an ACCENT — it earns its place, it does not edge every box.
+   Gold is an ACCENT. It earns its place, it does not edge every box.
    ========================================================================== */
 
 /* ---------------------------------------------------------------------------
    1. TOKENS
-   Brand navy + gold are carried over deliberately — they already exist on the
+   Brand navy + gold are carried over deliberately, they already exist on the
    capability statement, the SBA badges and the business cards. The palette is
    not being replaced, it is being given tonal range it never had.
    ------------------------------------------------------------------------ */
 :root{
   /* --- brand --- */
-  --navy-900:#081A33;   /* deepest — hero floor, footer */
+  --navy-900:#081A33;   /* deepest: hero floor, footer */
   --navy-800:#0B2140;   /* the established brand navy */
   --navy-700:#12345E;
   --navy-600:#1B4478;
   /* only ever used as text ON dark navy (.foot-ids, .foot-legal, dark-section .small).
-     #5D7BA6 measured 4.43:1 on --navy-900 — just under AA. Lightened to clear it. */
+     #5D7BA6 measured 4.43:1 on --navy-900, just under AA. Lightened to clear it. */
   --navy-400:#7C99C4;
   --navy-200:#A9BDD8;
 
   /* ⚠️ This is the gold used AS TEXT on light backgrounds (--accent-ink): .eyebrow,
-     .card-num, .callout .lbl. #A8861C measured only 3.45:1 on white — FAILS AA for the
+     .card-num, .callout .lbl. #A8861C measured only 3.45:1 on white and FAILS AA for the
      small sizes it's used at. Darkened until measured ≥4.5. Do not lighten it back
      without re-running the light-mode contrast audit. */
   --gold-600:#7D6210;
@@ -64,7 +64,7 @@
   --s1:4px;  --s2:8px;  --s3:12px; --s4:16px; --s5:24px;
   --s6:32px; --s7:48px; --s8:64px; --s9:96px;
 
-  --radius:3px;          /* deliberate, minimal — precision not softness */
+  --radius:3px;          /* deliberate, minimal: precision not softness */
   --radius-lg:5px;
   --measure:66ch;        /* readable line length */
   --shell:1120px;
@@ -85,7 +85,7 @@
   --accent:#DFBB43; --accent-ink:#E3C45B;
   --navy-800:#0A1526; --navy-900:#070F1C;
   /* ⚠️ navy-600/-700 MUST be inverted for dark too. Missing these put `.card h3`
-     (var(--navy-700)) and every body link (var(--navy-600)) at 1.48:1 — effectively
+     (var(--navy-700)) and every body link (var(--navy-600)) at 1.48:1, effectively
      invisible. Caught by the dark-mode contrast audit, 2026-07-27. */
   --navy-700:#A8C4E8; --navy-600:#96B6E2; --navy-400:#8AA6CC;
   --shadow-sm:0 1px 2px rgba(0,0,0,.4);
@@ -99,7 +99,7 @@
     --bg:#0B1322;   --fg:#E8EDF6;
     --accent:#DFBB43; --accent-ink:#E3C45B;
     --navy-800:#0A1526; --navy-900:#070F1C;
-    /* keep in lockstep with the [data-theme="dark"] block above — see note there */
+    /* keep in lockstep with the [data-theme="dark"] block above. See note there */
     --navy-700:#A8C4E8; --navy-600:#96B6E2; --navy-400:#8AA6CC;
     --shadow-sm:0 1px 2px rgba(0,0,0,.4);
     --shadow-md:0 10px 30px rgba(0,0,0,.5);
@@ -214,14 +214,14 @@ hr{border:0;border-top:1px solid var(--line);margin:var(--s7) 0;}
   content:"";position:absolute;left:.8rem;right:.8rem;bottom:.16rem;
   height:2px;background:var(--accent);border-radius:2px;
 }
-/* ⚠️ `.nav a` is (0,1,1) and outranks `.btn-primary` (0,1,0) — without this the nav CTA
+/* ⚠️ `.nav a` is (0,1,1) and outranks `.btn-primary` (0,1,0). Without this the nav CTA
    rendered navy-200 text on gold at 1.03:1, effectively illegible. Caught 2026-07-27.
    Keep the `a` in these selectors so they stay at or above `.nav a`. */
 .nav a.btn{margin-left:var(--s3);padding:.55rem 1rem;font-size:.86rem;}
 .nav a.btn-primary{color:var(--navy-900);background:var(--accent);}
 .nav a.btn-primary:hover{color:var(--navy-900);background:var(--gold-400);}
 
-/* Mobile nav — a checkbox-driven disclosure so it works with zero JS.
+/* Mobile nav: a checkbox-driven disclosure so it works with zero JS.
    (JS enhances it for aria-expanded, but the site must not depend on it.) */
 .nav-toggle{display:none;}
 .nav-btn{display:none;background:none;border:1px solid rgba(255,255,255,.22);
@@ -254,7 +254,7 @@ hr{border:0;border-top:1px solid var(--line);margin:var(--s7) 0;}
     radial-gradient(1100px 520px at 82% -10%, rgba(27,68,120,.55), transparent 62%),
     linear-gradient(176deg, var(--navy-800) 0%, var(--navy-900) 100%);
 }
-.hero::after{ /* hairline of gold at the base — the only gold edge on the page */
+.hero::after{ /* hairline of gold at the base: the only gold edge on the page */
   content:"";position:absolute;left:0;right:0;bottom:0;height:1px;
   background:linear-gradient(90deg,transparent,rgba(201,162,39,.7) 22%,
              rgba(201,162,39,.7) 78%,transparent);
@@ -275,14 +275,14 @@ hr{border:0;border-top:1px solid var(--line);margin:var(--s7) 0;}
 .chip-solid{background:var(--accent);color:var(--navy-900);}
 .chip-line{border:1px solid rgba(201,162,39,.5);color:var(--gold-400);}
 
-/* Identifier strip — UEI / CAGE / NAICS. Federal buyers scan for these first. */
+/* Identifier strip: UEI / CAGE / NAICS. Federal buyers scan for these first. */
 .idstrip{
   display:flex;flex-wrap:wrap;gap:var(--s5) var(--s7);
   border:1px solid rgba(201,162,39,.32);border-left:2px solid var(--accent);
   background:rgba(255,255,255,.045);border-radius:var(--radius);
   padding:var(--s4) var(--s5);margin:var(--s6) 0;
 }
-/* ⚠️ --gold-500 (#C9A227) measured 4.05:1 here — under AA. These labels render at
+/* ⚠️ --gold-500 (#C9A227) measured 4.05:1 here, under AA. These labels render at
    ~10.2px/700 on the hero's navy gradient, so they need the brighter gold. */
 .idstrip dt{font-size:.64rem;font-weight:700;letter-spacing:.15em;text-transform:uppercase;
   color:var(--gold-400);margin-bottom:3px;}
@@ -444,7 +444,7 @@ table.codes-t td.c{font-family:var(--mono);font-weight:600;color:var(--navy-700)
 .article code{font-family:var(--mono);font-size:.9em;background:var(--panel);
   border:1px solid var(--line);border-radius:2px;padding:.1em .35em;}
 
-/* Source citations — collapsed by default into a native <details> disclosure so a
+/* Source citations, collapsed by default into a native <details> disclosure so a
    long reference list doesn't dominate the end of the article. Fully keyboard- and
    screen-reader-operable with zero JS; content stays in the DOM for SEO + RSS. */
 details.sources{margin-top:var(--s8);background:var(--panel);
@@ -503,7 +503,7 @@ details.sources a{overflow-wrap:anywhere;}
   .foot-grid{grid-template-columns:1fr;gap:var(--s5);}
 }
 /* the contact email is one unbreakable token (~171px) and cannot wrap in a narrow
-   column — let it break rather than punch out of the layout */
+   column, so let it break rather than punch out of the layout */
 .foot-grid a,.foot-grid li,.foot-blurb{overflow-wrap:anywhere;}
 .foot-grid h3,.foot-grid h4{font-family:var(--sans);font-size:.66rem;letter-spacing:.15em;
   text-transform:uppercase;color:var(--gold-500);font-weight:700;margin:0 0 var(--s3);}
@@ -530,7 +530,7 @@ details.sources a{overflow-wrap:anywhere;}
 .page-head .wrap{padding-block:clamp(40px,5vw,68px);position:relative;}
 .page-head h1{color:#fff;margin-bottom:var(--s3);}
 .page-head p{color:var(--navy-200);max-width:58ch;margin:0;font-size:1.05rem;}
-/* same story as .idstrip dt — --gold-500 measured 4.05:1 on the page-head navy at this
+/* same story as .idstrip dt: --gold-500 measured 4.05:1 on the page-head navy at this
    size. The brighter gold clears AA. */
 .crumb{font-size:.76rem;letter-spacing:.1em;text-transform:uppercase;font-weight:600;
   color:var(--gold-400);margin-bottom:var(--s3);}
@@ -538,7 +538,66 @@ details.sources a{overflow-wrap:anywhere;}
 .crumb a:hover{text-decoration:underline;}
 
 /* ---------------------------------------------------------------------------
-   15. PRINT
+   15. SCRIPTURE: Psalm 16:5-6
+   The verse Lot 9 is built on: reference in the header, full text in the footer
+   of every page, and a featured treatment in the Foundation section on Home.
+
+   🔴 THE TEXT IS KING JAMES VERSION, VERIFIED WORD-FOR-WORD (2026-08-21, against
+   Bible Hub, Blue Letter Bible, and Bible Gateway). Do NOT reword it, re-punctuate
+   it, or change the capitalisation of LORD. The full caps are the KJV convention
+   marking the Tetragrammaton (YHWH), not a style choice; "Lord" would name a
+   different thing. The <i> on "is" and "places" is also KJV convention: it marks
+   words supplied by the translators that are absent from the Hebrew. That is
+   precisely why the quotation is set ROMAN and not italic, because an italic block would
+   swallow those marks and destroy the distinction. Reference copy and the full
+   verification record: Brand\Lot-9-Biblical-Foundation.md.
+   ------------------------------------------------------------------------ */
+.head-verse{
+  flex:0 0 auto;margin-left:var(--s4);padding-left:var(--s4);
+  border-left:1px solid rgba(201,162,39,.32);
+  font-family:var(--serif);font-size:.8rem;font-weight:500;
+  color:var(--gold-500);letter-spacing:.03em;white-space:nowrap;
+}
+/* The header runs out of room BEFORE the 860px mobile breakpoint does. The nav's
+   gold CTA and this reference start colliding around 1020px. Drop it early; the
+   full verse still reaches every reader in the footer directly below. */
+@media (max-width:1020px){ .head-verse{display:none;} }
+
+/* --- footer: the full verse, every page --- */
+.foot-verse{
+  padding-bottom:var(--s6);margin-bottom:var(--s6);
+  border-bottom:1px solid rgba(201,162,39,.22);text-align:center;
+}
+.foot-verse blockquote{
+  margin:0 auto;max-width:62ch;font-family:var(--serif);
+  font-size:1.04rem;line-height:1.65;color:var(--on-dark);font-style:normal;
+}
+.foot-verse i{font-style:italic;}
+.verse-ref{
+  display:block;margin:var(--s3) 0 0;font-family:var(--sans);
+  font-size:.7rem;font-weight:700;letter-spacing:.2em;
+  text-transform:uppercase;color:var(--gold-500);font-style:normal;
+}
+@media (max-width:640px){ .foot-verse blockquote{font-size:.97rem;} }
+
+/* --- Foundation section (Home): the verse given room --- */
+.verse-feature{
+  margin:0 0 var(--s6);padding:var(--s2) 0 var(--s2) var(--s5);
+  border-left:3px solid var(--accent);max-width:64ch;
+  font-family:var(--serif);font-size:1.18rem;line-height:1.6;
+  color:var(--ink);font-style:normal;
+}
+.verse-feature i{font-style:italic;}
+/* ⚠️ --gold-500 as small text on the light .panel background measures ~3.4:1 and
+   FAILS AA. Inside .verse-feature the reference must use --accent-ink (the darkened
+   gold reserved for text on light). Do not "match" it to the footer's gold. */
+.verse-feature .verse-ref{color:var(--accent-ink);}
+@media (max-width:640px){
+  .verse-feature{font-size:1.06rem;padding-left:var(--s4);}
+}
+
+/* ---------------------------------------------------------------------------
+   16. PRINT
    ------------------------------------------------------------------------ */
 @media print{
   .site-head,.site-foot,.cta-band,.nav-btn{display:none!important;}
