@@ -383,7 +383,8 @@ table.codes-t td.c{font-family:var(--mono);font-weight:600;color:var(--navy-700)
 .certs-txt{flex:1 1 240px;min-width:220px;}
 .certs-txt p{margin:0;font-size:.9rem;color:var(--muted);}
 .certs-txt b{color:var(--fg);font-weight:600;}
-@media (max-width:560px){.certs img{width:98px;}}
+/* 3 SBA badges since 2026-11-14 (SDVOSB, VOSB, HUBZone): 3x86 + 2x16 = 290px fits one row from 338px up */
+@media (max-width:560px){.certs{gap:var(--s4);}.certs img{width:86px;}}
 
 /* ---------------------------------------------------------------------------
    11. FORMS
